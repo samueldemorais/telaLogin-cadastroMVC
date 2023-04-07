@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samuel</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFA500;
+}
+
+/* Estilo do contêiner de login */
+#login {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* Estilo do título do login */
+#login h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+#login input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos botões */
+#login button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #1E88E5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#login button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
+<body>
+    <div id = 'login' >
+        <h1>LOGIN DO USUARIO </h1>
+
+        EMAIL : <input id="nomeUsuario"> <br>
+        senha : <input id="idadeUsuario"> <br>
+
+        <button onclick="NovoControlador.inserirUsuario()">Inserir Novo Usuário</button> <br>
+        <button onclick="NovoControlador.verificarUsuario()">Logar e ir pra Cadastro</button> <br>
+
+    </div>
+
+
+    <script src="js/model/cliente.js"></script>
+    <script src="js/repositorio/cliente-repositorio.js"></script>
+    <script src="js/servico/cliente-servico.js"></script>
+    <script src="js/controller/controlador.js"></script>
+    <script src="js/model/login.js"></script>
+    <script src="js/model/usuario.js"></script>
+    <script src="js/repositorio/usuariorepositorio.js"></script>
+    <script src="js/servico/usuarioservico.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

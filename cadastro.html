@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Samuel</title>
+</head>
+<style>
+   body {
+  background-color: #0D47A1; 
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 50px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: 2px solid #FFA500;
+  border-radius: 10px; 
+  font-size: 1.2rem;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #FF8C00; 
+}
+
+#cadastroCliente {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: #fff;
+  color: #333;
+}
+</style>
+<body>
+
+    <div id = 'cadastroCliente'>
+        <h1>CADASTRO DE USUARIO</h1>
+        Nome : <input id="nome"> <br>
+        Matricula : <input id="matricula"> <br>
+        Telefone : <input id="fone"> <br>
+        Rua : <input id="rua"> <br>
+        Numero : <input id="numero"> <br>
+        Bairro : <input id="bairro"> <br>
+        Complemento : <input id="complemento"> <br>
+        Cidade : <input id="cidade"> <br>
+        Estado : <input id="estado"> <br>
+        Número de Filhos : <input id="numeroFilhos"> <br>
+        Renda Familiar : <input id="rendaFamiliar"> <br>
+
+
+        <button onclick="NovoControlador.inserirCliente()">Inserir</button> <br>
+        <button onclick="NovoControlador.exportarCSV()">Gerar arquivo csv  dos clientes</button> <br>
+
+    </div>
+
+    <script src="js/model/cliente.js"></script>
+    <script src="js/repositorio/cliente-repositorio.js"></script>
+    <script src="js/servico/cliente-servico.js"></script>
+    <script src="js/controller/controlador.js"></script>
+    <script src="js/model/login.js"></script>
+    <script src="js/model/usuario.js"></script>
+    <script src="js/repositorio/usuariorepositorio.js"></script>
+    <script src="js/servico/usuarioservico.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

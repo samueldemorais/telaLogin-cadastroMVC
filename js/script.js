@@ -1,0 +1,1 @@
+const NovoControlador = new Controlador();
